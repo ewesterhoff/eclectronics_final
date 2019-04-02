@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:final_project-cache
 EELAYER 26 0
 EELAYER END
 $Descr USLedger 17000 11000
@@ -918,159 +919,159 @@ Connection ~ 5400 1900
 $Comp
 L Connector:Conn_01x15_Male J3
 U 1 1 5C56A049
-P 14400 4500
-F 0 "J3" H 14373 4523 50  0000 R CNN
-F 1 "Conn_01x15_Male" H 14373 4432 50  0000 R CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x15_P2.54mm_Vertical" H 14400 4500 50  0001 C CNN
-F 3 "~" H 14400 4500 50  0001 C CNN
-	1    14400 4500
+P 1900 6850
+F 0 "J3" H 1873 6873 50  0000 R CNN
+F 1 "Conn_01x15_Male" H 1873 6782 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x15_P2.54mm_Vertical" H 1900 6850 50  0001 C CNN
+F 3 "~" H 1900 6850 50  0001 C CNN
+	1    1900 6850
 	-1   0    0    -1  
 $EndComp
 $Comp
 L Connector:Conn_01x15_Male J4
 U 1 1 5C56A11F
-P 14400 6300
-F 0 "J4" H 14373 6323 50  0000 R CNN
-F 1 "Conn_01x15_Male" H 14373 6232 50  0000 R CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x15_P2.54mm_Vertical" H 14400 6300 50  0001 C CNN
-F 3 "~" H 14400 6300 50  0001 C CNN
-	1    14400 6300
+P 1900 8650
+F 0 "J4" H 1873 8673 50  0000 R CNN
+F 1 "Conn_01x15_Male" H 1873 8582 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x15_P2.54mm_Vertical" H 1900 8650 50  0001 C CNN
+F 3 "~" H 1900 8650 50  0001 C CNN
+	1    1900 8650
 	-1   0    0    -1  
 $EndComp
-Text Label 14200 3800 2    50   ~ 0
+Text Label 1700 6150 2    50   ~ 0
 VIN
 $Comp
 L power:GND #PWR034
 U 1 1 5C586795
-P 14000 3900
-F 0 "#PWR034" H 14000 3650 50  0001 C CNN
-F 1 "GND" V 14000 3750 50  0000 R CNN
-F 2 "" H 14000 3900 50  0001 C CNN
-F 3 "" H 14000 3900 50  0001 C CNN
-	1    14000 3900
+P 1500 6250
+F 0 "#PWR034" H 1500 6000 50  0001 C CNN
+F 1 "GND" V 1500 6100 50  0000 R CNN
+F 2 "" H 1500 6250 50  0001 C CNN
+F 3 "" H 1500 6250 50  0001 C CNN
+	1    1500 6250
 	0    1    1    0   
 $EndComp
-Text Label 14200 4000 2    50   ~ 0
+Text Label 1700 6350 2    50   ~ 0
 RESET
 $Comp
 L power:+5V #PWR035
 U 1 1 5C59157E
-P 14000 4100
-F 0 "#PWR035" H 14000 3950 50  0001 C CNN
-F 1 "+5V" V 14000 4250 50  0000 L CNN
-F 2 "" H 14000 4100 50  0001 C CNN
-F 3 "" H 14000 4100 50  0001 C CNN
-	1    14000 4100
+P 1500 6450
+F 0 "#PWR035" H 1500 6300 50  0001 C CNN
+F 1 "+5V" V 1500 6600 50  0000 L CNN
+F 2 "" H 1500 6450 50  0001 C CNN
+F 3 "" H 1500 6450 50  0001 C CNN
+	1    1500 6450
 	0    -1   -1   0   
 $EndComp
-Text Label 14200 4200 2    50   ~ 0
+Text Label 1700 6550 2    50   ~ 0
 A7
-Text Label 14200 4300 2    50   ~ 0
+Text Label 1700 6650 2    50   ~ 0
 A6
-Text Label 14200 4400 2    50   ~ 0
+Text Label 1700 6750 2    50   ~ 0
 A5
-Text Label 14200 4500 2    50   ~ 0
+Text Label 1700 6850 2    50   ~ 0
 A4
-Text Label 14200 4600 2    50   ~ 0
+Text Label 1700 6950 2    50   ~ 0
 A3
-Text Label 14200 4700 2    50   ~ 0
+Text Label 1700 7050 2    50   ~ 0
 A2
-Text Label 14200 4800 2    50   ~ 0
+Text Label 1700 7150 2    50   ~ 0
 A1
-Text Label 14200 4900 2    50   ~ 0
+Text Label 1700 7250 2    50   ~ 0
 A0
 Wire Wire Line
-	14000 4100 14200 4100
+	1500 6450 1700 6450
 Wire Wire Line
-	14000 3900 14200 3900
+	1500 6250 1700 6250
 Text Label 8700 5800 2    50   ~ 0
 AREF
-Text Label 14200 5000 2    50   ~ 0
+Text Label 1700 7350 2    50   ~ 0
 AREF
-Text Label 14200 5200 2    50   ~ 0
+Text Label 1700 7550 2    50   ~ 0
 D13
 $Comp
 L power:+3V3 #PWR036
 U 1 1 5C5A4A29
-P 14000 5100
-F 0 "#PWR036" H 14000 4950 50  0001 C CNN
-F 1 "+3V3" V 14000 5250 50  0000 L CNN
-F 2 "" H 14000 5100 50  0001 C CNN
-F 3 "" H 14000 5100 50  0001 C CNN
-	1    14000 5100
+P 1500 7450
+F 0 "#PWR036" H 1500 7300 50  0001 C CNN
+F 1 "+3V3" V 1500 7600 50  0000 L CNN
+F 2 "" H 1500 7450 50  0001 C CNN
+F 3 "" H 1500 7450 50  0001 C CNN
+	1    1500 7450
 	0    -1   1    0   
 $EndComp
 Wire Wire Line
-	14000 5100 14200 5100
-Text Label 14200 5600 2    50   ~ 0
+	1500 7450 1700 7450
+Text Label 1700 7950 2    50   ~ 0
 D1
-Text Label 14200 5700 2    50   ~ 0
+Text Label 1700 8050 2    50   ~ 0
 D0
-Text Label 14200 5800 2    50   ~ 0
+Text Label 1700 8150 2    50   ~ 0
 RESET
 $Comp
 L power:GND #PWR037
 U 1 1 5C5AC733
-P 14000 5900
-F 0 "#PWR037" H 14000 5650 50  0001 C CNN
-F 1 "GND" V 14000 5750 50  0000 R CNN
-F 2 "" H 14000 5900 50  0001 C CNN
-F 3 "" H 14000 5900 50  0001 C CNN
-	1    14000 5900
+P 1500 8250
+F 0 "#PWR037" H 1500 8000 50  0001 C CNN
+F 1 "GND" V 1500 8100 50  0000 R CNN
+F 2 "" H 1500 8250 50  0001 C CNN
+F 3 "" H 1500 8250 50  0001 C CNN
+	1    1500 8250
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	14000 5900 14200 5900
-Text Label 14200 6000 2    50   ~ 0
+	1500 8250 1700 8250
+Text Label 1700 8350 2    50   ~ 0
 D2
-Text Label 14200 6100 2    50   ~ 0
+Text Label 1700 8450 2    50   ~ 0
 D3
-Text Label 14200 6200 2    50   ~ 0
+Text Label 1700 8550 2    50   ~ 0
 D4
-Text Label 14200 6300 2    50   ~ 0
+Text Label 1700 8650 2    50   ~ 0
 D5
-Text Label 14200 6400 2    50   ~ 0
+Text Label 1700 8750 2    50   ~ 0
 D6
-Text Label 14200 6500 2    50   ~ 0
+Text Label 1700 8850 2    50   ~ 0
 D7
-Text Label 14200 6600 2    50   ~ 0
+Text Label 1700 8950 2    50   ~ 0
 D8
-Text Label 14200 6700 2    50   ~ 0
+Text Label 1700 9050 2    50   ~ 0
 D9
-Text Label 14200 6800 2    50   ~ 0
+Text Label 1700 9150 2    50   ~ 0
 D10
-Text Label 14200 6900 2    50   ~ 0
+Text Label 1700 9250 2    50   ~ 0
 D11
-Text Label 14200 7000 2    50   ~ 0
+Text Label 1700 9350 2    50   ~ 0
 D12
-Text Label 14100 7600 2    50   ~ 0
+Text Label 1600 9950 2    50   ~ 0
 D12
-Text Label 14500 7700 0    50   ~ 0
+Text Label 2000 10050 0    50   ~ 0
 D11
-Text Label 14100 7800 2    50   ~ 0
+Text Label 1600 10150 2    50   ~ 0
 RESET
-Text Label 14100 7700 2    50   ~ 0
+Text Label 1600 10050 2    50   ~ 0
 D13
 $Comp
 L power:GND #PWR039
 U 1 1 5C5B1B04
-P 14650 7800
-F 0 "#PWR039" H 14650 7550 50  0001 C CNN
-F 1 "GND" V 14650 7650 50  0000 R CNN
-F 2 "" H 14650 7800 50  0001 C CNN
-F 3 "" H 14650 7800 50  0001 C CNN
-	1    14650 7800
+P 2150 10150
+F 0 "#PWR039" H 2150 9900 50  0001 C CNN
+F 1 "GND" V 2150 10000 50  0000 R CNN
+F 2 "" H 2150 10150 50  0001 C CNN
+F 3 "" H 2150 10150 50  0001 C CNN
+	1    2150 10150
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:+5V #PWR038
 U 1 1 5C5B579C
-P 14650 7600
-F 0 "#PWR038" H 14650 7450 50  0001 C CNN
-F 1 "+5V" V 14650 7750 50  0000 L CNN
-F 2 "" H 14650 7600 50  0001 C CNN
-F 3 "" H 14650 7600 50  0001 C CNN
-	1    14650 7600
+P 2150 9950
+F 0 "#PWR038" H 2150 9800 50  0001 C CNN
+F 1 "+5V" V 2150 10100 50  0000 L CNN
+F 2 "" H 2150 9950 50  0001 C CNN
+F 3 "" H 2150 9950 50  0001 C CNN
+	1    2150 9950
 	0    1    1    0   
 $EndComp
 Wire Wire Line
@@ -1088,14 +1089,14 @@ Wire Wire Line
 Wire Wire Line
 	8350 5200 8400 5200
 Wire Wire Line
-	14500 7600 14650 7600
+	2000 9950 2150 9950
 Wire Wire Line
-	14500 7800 14650 7800
+	2000 10150 2150 10150
 $Comp
-L final_project:MCP1702T-5002E_CB U?
+L final_project-rescue:MCP1702T-5002E_CB-final_project U2
 U 1 1 5CA3144C
 P 4800 2000
-F 0 "U?" H 4800 2365 50  0000 C CNN
+F 0 "U2" H 4800 2365 50  0000 C CNN
 F 1 "MCP1702T-5002E_CB" H 4800 2274 50  0000 C CNN
 F 2 "" H 4800 2100 50  0001 C CNN
 F 3 "" H 4800 2100 50  0001 C CNN
@@ -1103,43 +1104,43 @@ F 3 "" H 4800 2100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L final_project:TPS2113ADRBR U?
+L final_project-rescue:TPS2113ADRBR-final_project U3
 U 1 1 5CA32628
 P 7500 2200
-F 0 "U?" H 7500 2787 60  0000 C CNN
+F 0 "U3" H 7500 2787 60  0000 C CNN
 F 1 "TPS2113ADRBR" H 7500 2681 60  0000 C CNN
-F 2 "" H 7500 2350 60  0001 C CNN
+F 2 "final:TSP2113A-DRBR" H 7500 2350 60  0001 C CNN
 F 3 "" H 7500 2350 60  0001 C CNN
 	1    7500 2200
 	1    0    0    -1  
 $EndComp
 $Comp
-L final_project:FT232RQ U?
+L final_project-rescue:FT232RQ-final_project U1
 U 1 1 5CA36FF0
 P 4500 5500
-F 0 "U?" H 4500 7065 50  0000 C CNN
+F 0 "U1" H 4500 7065 50  0000 C CNN
 F 1 "FT232RQ" H 4500 6974 50  0000 C CNN
-F 2 "" H 4500 6450 50  0001 C CNN
+F 2 "final:FT232RQ" H 4500 6450 50  0001 C CNN
 F 3 "" H 4500 6450 50  0001 C CNN
 	1    4500 5500
 	1    0    0    -1  
 $EndComp
 $Comp
-L final_project:ATMEGA328PB-MNR U?
+L final_project-rescue:ATMEGA328PB-MNR-final_project U4
 U 1 1 5CA3BA23
 P 9800 6100
-F 0 "U?" H 9800 8265 50  0000 C CNN
+F 0 "U4" H 9800 8265 50  0000 C CNN
 F 1 "ATMEGA328PB-MNR" H 9800 8174 50  0000 C CNN
-F 2 "" H 9800 5900 50  0001 C CNN
+F 2 "final:ATmega328" H 9800 5900 50  0001 C CNN
 F 3 "" H 9800 5900 50  0001 C CNN
 	1    9800 6100
 	1    0    0    -1  
 $EndComp
 $Comp
-L final_project:Crystal Y?
+L final_project-rescue:Crystal-final_project Y1
 U 1 1 5CA3E68E
 P 8700 5200
-F 0 "Y?" V 8654 5331 50  0000 L CNN
+F 0 "Y1" V 8654 5331 50  0000 L CNN
 F 1 "Crystal" V 8745 5331 50  0000 L CNN
 F 2 "" H 8700 5200 50  0001 C CNN
 F 3 "" H 8700 5200 50  0001 C CNN
@@ -1148,10 +1149,10 @@ F 3 "" H 8700 5200 50  0001 C CNN
 $EndComp
 Connection ~ 7000 5000
 $Comp
-L final_project:SW S?
+L final_project-rescue:SW-final_project S1
 U 1 1 5CA46B67
 P 7000 5300
-F 0 "S?" H 7048 5346 50  0000 L CNN
+F 0 "S1" H 7048 5346 50  0000 L CNN
 F 1 "SW" H 7048 5255 50  0000 L CNN
 F 2 "" V 7050 5400 60  0001 C CNN
 F 3 "" V 7050 5400 60  0001 C CNN
@@ -1159,25 +1160,25 @@ F 3 "" V 7050 5400 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L final_project:USB_microB_2040002-1 J?
+L final_project-rescue:USB_microB_2040002-1-final_project J1
 U 1 1 5CA46C65
 P 1550 5000
-F 0 "J?" H 1655 5689 60  0000 C CNN
+F 0 "J1" H 1655 5689 60  0000 C CNN
 F 1 "USB_microB_2040002-1" H 1655 5583 60  0000 C CNN
-F 2 "" H 1900 5150 50  0001 C CNN
+F 2 "final:USB_microB_2040002-1" H 1900 5150 50  0001 C CNN
 F 3 "" H 1900 5150 50  0001 C CNN
 	1    1550 5000
 	1    0    0    -1  
 $EndComp
 $Comp
-L final_project:Arduino_ICSP J?
+L final_project-rescue:Arduino_ICSP-final_project J2
 U 1 1 5CA46D69
-P 14300 7700
-F 0 "J?" H 14300 8025 50  0000 C CNN
-F 1 "Arduino_ICSP" H 14300 7934 50  0000 C CNN
-F 2 "" H 14300 7800 50  0001 C CNN
-F 3 "" H 14300 7800 50  0001 C CNN
-	1    14300 7700
+P 1800 10050
+F 0 "J2" H 1800 10375 50  0000 C CNN
+F 1 "Arduino_ICSP" H 1800 10284 50  0000 C CNN
+F 2 "final:Arduino_ICSP" H 1800 10150 50  0001 C CNN
+F 3 "" H 1800 10150 50  0001 C CNN
+	1    1800 10050
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

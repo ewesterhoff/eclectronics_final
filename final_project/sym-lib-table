@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name mp3a)(type Legacy)(uri ${KIPRJMOD}/mp3a.lib)(options "")(descr ""))
+  (lib (name final_project-rescue)(type Legacy)(uri ${KIPRJMOD}/final_project-rescue.lib)(options "")(descr ""))
 )

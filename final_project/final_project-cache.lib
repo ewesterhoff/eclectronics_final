@@ -118,11 +118,11 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# final_project_ATMEGA328PB-MNR
+# final_project-rescue_ATMEGA328PB-MNR-final_project
 #
-DEF final_project_ATMEGA328PB-MNR U 0 40 Y Y 1 F N
+DEF final_project-rescue_ATMEGA328PB-MNR-final_project U 0 40 Y Y 1 F N
 F0 "U" 0 2150 50 H V C CNN
-F1 "final_project_ATMEGA328PB-MNR" 0 2050 50 H V C CNN
+F1 "final_project-rescue_ATMEGA328PB-MNR-final_project" 0 2050 50 H V C CNN
 F2 "" 0 -200 50 H I C CNN
 F3 "" 0 -200 50 H I C CNN
 DRAW
@@ -163,11 +163,11 @@ X PD5/T1 9 1100 -1300 200 L 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# final_project_Arduino_ICSP
+# final_project-rescue_Arduino_ICSP-final_project
 #
-DEF final_project_Arduino_ICSP J 0 40 Y Y 1 F N
+DEF final_project-rescue_Arduino_ICSP-final_project J 0 40 Y Y 1 F N
 F0 "J" 0 200 50 H V C CNN
-F1 "final_project_Arduino_ICSP" 0 -200 50 H V C CNN
+F1 "final_project-rescue_Arduino_ICSP-final_project" 0 -200 50 H V C CNN
 F2 "" 0 100 50 H I C CNN
 F3 "" 0 100 50 H I C CNN
 DRAW
@@ -193,11 +193,11 @@ X ~ 6 200 -100 100 L 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# final_project_Crystal
+# final_project-rescue_Crystal-final_project
 #
-DEF final_project_Crystal Y 0 40 N N 1 F N
+DEF final_project-rescue_Crystal-final_project Y 0 40 N N 1 F N
 F0 "Y" 0 300 50 H V C CNN
-F1 "final_project_Crystal" 0 200 50 H V C CNN
+F1 "final_project-rescue_Crystal-final_project" 0 200 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -224,11 +224,11 @@ X 3 3 200 0 50 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# final_project_FT232RQ
+# final_project-rescue_FT232RQ-final_project
 #
-DEF final_project_FT232RQ U 0 40 Y Y 1 F N
+DEF final_project-rescue_FT232RQ-final_project U 0 40 Y Y 1 F N
 F0 "U" 0 1550 50 H V C CNN
-F1 "final_project_FT232RQ" 0 1450 50 H V C CNN
+F1 "final_project-rescue_FT232RQ-final_project" 0 1450 50 H V C CNN
 F2 "" 0 950 50 H I C CNN
 F3 "" 0 950 50 H I C CNN
 DRAW
@@ -269,11 +269,11 @@ X CBUS4 9 1100 -1300 200 L 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# final_project_MCP1702T-5002E_CB
+# final_project-rescue_MCP1702T-5002E_CB-final_project
 #
-DEF final_project_MCP1702T-5002E_CB U 0 40 Y Y 1 F N
+DEF final_project-rescue_MCP1702T-5002E_CB-final_project U 0 40 Y Y 1 F N
 F0 "U" 0 350 50 H V C CNN
-F1 "final_project_MCP1702T-5002E_CB" 0 250 50 H V C CNN
+F1 "final_project-rescue_MCP1702T-5002E_CB-final_project" 0 250 50 H V C CNN
 F2 "" 0 100 50 H I C CNN
 F3 "" 0 100 50 H I C CNN
 DRAW
@@ -284,11 +284,11 @@ X VOUT 3 500 100 200 L 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# final_project_SW
+# final_project-rescue_SW-final_project
 #
-DEF final_project_SW S 0 40 N N 1 F N
+DEF final_project-rescue_SW-final_project S 0 40 N N 1 F N
 F0 "S" 50 100 50 H V L CNN
-F1 "final_project_SW" 50 -100 50 H V L CNN
+F1 "final_project-rescue_SW-final_project" 50 -100 50 H V L CNN
 F2 "" 50 100 60 V I C CNN
 F3 "" 50 100 60 V I C CNN
 DRAW
@@ -302,11 +302,11 @@ X 2 2 0 150 50 D 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# final_project_TPS2113ADRBR
+# final_project-rescue_TPS2113ADRBR-final_project
 #
-DEF final_project_TPS2113ADRBR U 0 40 Y Y 1 F N
+DEF final_project-rescue_TPS2113ADRBR-final_project U 0 40 Y Y 1 F N
 F0 "U" 0 550 60 H V C CNN
-F1 "final_project_TPS2113ADRBR" 0 450 60 H V C CNN
+F1 "final_project-rescue_TPS2113ADRBR-final_project" 0 450 60 H V C CNN
 F2 "" 0 150 60 H I C CNN
 F3 "" 0 150 60 H I C CNN
 DRAW
@@ -323,11 +323,11 @@ X EP 9 0 -600 200 U 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# final_project_USB_microB_2040002-1
+# final_project-rescue_USB_microB_2040002-1-final_project
 #
-DEF final_project_USB_microB_2040002-1 J 0 40 Y Y 1 F N
+DEF final_project-rescue_USB_microB_2040002-1-final_project J 0 40 Y Y 1 F N
 F0 "J" -450 650 60 H V L CNN
-F1 "final_project_USB_microB_2040002-1" -450 550 60 H V L CNN
+F1 "final_project-rescue_USB_microB_2040002-1-final_project" -450 550 60 H V L CNN
 F2 "" 350 150 50 H I C CNN
 F3 "" 350 150 50 H I C CNN
 $FPLIST
