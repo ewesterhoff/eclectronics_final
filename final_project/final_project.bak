@@ -603,8 +603,6 @@ Text Label 10900 7200 0    50   ~ 0
 logic4_5
 Text Label 10900 7400 0    50   ~ 0
 logic3_5
-Text Label 10900 7600 0    50   ~ 0
-D4
 Text Label 10900 7800 0    50   ~ 0
 logic2_5
 Text Label 10900 8000 0    50   ~ 0
@@ -2055,10 +2053,10 @@ F 3 "" H 15750 7450 50  0001 C CNN
 $EndComp
 NoConn ~ 10900 5400
 $Comp
-L final_project-rescue:TXB0108_RGYR U?
+L final_project-rescue:TXB0108_RGYR U11
 U 1 1 5CB4B187
 P 7500 9000
-F 0 "U?" H 7500 10200 50  0000 C CNN
+F 0 "U11" H 7500 10200 50  0000 C CNN
 F 1 "TXB0108_RGYR" H 7500 10100 50  0000 C CNN
 F 2 "" H 7400 9250 50  0001 C CNN
 F 3 "" H 7400 9250 50  0001 C CNN
@@ -2141,4 +2139,5 @@ F 3 "" H 7400 8250 50  0001 C CNN
 	1    7400 8250
 	1    0    0    -1  
 $EndComp
+NoConn ~ 10900 7600
 $EndSCHEMATC

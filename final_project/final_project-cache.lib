@@ -91,6 +91,40 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# final_project-rescue_2_pin_screw_terminal
+#
+DEF final_project-rescue_2_pin_screw_terminal U 0 40 Y Y 1 F N
+F0 "U" 0 0 50 H V C CNN
+F1 "final_project-rescue_2_pin_screw_terminal" 50 250 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -100 200 100 -200 0 1 0 N
+X 3.7V 1 -200 100 100 R 20 20 1 1 I
+X GND 2 -200 -100 100 R 20 20 1 1 I
+ENDDRAW
+ENDDEF
+#
+# final_project-rescue_8_pin_screw_terminal
+#
+DEF final_project-rescue_8_pin_screw_terminal U 0 40 Y Y 1 F N
+F0 "U" 0 0 50 H V C CNN
+F1 "final_project-rescue_8_pin_screw_terminal" 0 300 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -50 250 50 -250 0 1 0 N
+X m1a 1 -150 200 100 R 20 20 1 1 I
+X m1b 2 -150 150 100 R 20 20 1 1 I
+X m2a 3 -150 100 100 R 20 20 1 1 I
+X m2b 4 -150 50 100 R 20 20 1 1 I
+X m3a 5 -150 -50 100 R 20 20 1 1 I
+X m3b 6 -150 -100 100 R 20 20 1 1 I
+X m4a 7 -150 -150 100 R 20 20 1 1 I
+X m4b 8 -150 -200 100 R 20 20 1 1 I
+ENDDRAW
+ENDDEF
+#
 # final_project-rescue_ATMEGA328PB-MNR-final_project
 #
 DEF final_project-rescue_ATMEGA328PB-MNR-final_project U 0 40 Y Y 1 F N
