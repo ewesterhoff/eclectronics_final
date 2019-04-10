@@ -2140,4 +2140,144 @@ F 3 "" H 7400 8250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 10900 7600
+$Comp
+L final_project-rescue:8_pin_screw_terminal U?
+U 1 1 5CAE560A
+P 15850 2950
+F 0 "U?" H 15929 2996 50  0000 L CNN
+F 1 "8_pin_screw_terminal" H 15929 2905 50  0000 L CNN
+F 2 "" H 15850 2950 50  0001 C CNN
+F 3 "" H 15850 2950 50  0001 C CNN
+	1    15850 2950
+	1    0    0    -1  
+$EndComp
+Text Label 15350 2750 0    50   ~ 0
+motor1a
+Text Label 15350 2800 0    50   ~ 0
+motor1b
+Text Label 15350 2850 0    50   ~ 0
+motor2a
+Text Label 15350 2900 0    50   ~ 0
+motor2b
+Text Label 15350 3000 0    50   ~ 0
+motor3a
+Text Label 15350 3050 0    50   ~ 0
+motor3b
+Text Label 15350 3100 0    50   ~ 0
+motor4a
+Text Label 15350 3150 0    50   ~ 0
+motor4b
+Wire Wire Line
+	15350 2750 15700 2750
+Wire Wire Line
+	15700 2800 15350 2800
+Wire Wire Line
+	15350 2850 15700 2850
+Wire Wire Line
+	15350 2900 15700 2900
+Wire Wire Line
+	15350 3000 15700 3000
+Wire Wire Line
+	15700 3050 15350 3050
+Wire Wire Line
+	15350 3100 15700 3100
+Wire Wire Line
+	15350 3150 15700 3150
+$Comp
+L final_project-rescue:8_pin_screw_terminal U?
+U 1 1 5CB47892
+P 10300 2800
+F 0 "U?" H 10379 2846 50  0000 L CNN
+F 1 "8_pin_screw_terminal" H 10379 2755 50  0000 L CNN
+F 2 "" H 10300 2800 50  0001 C CNN
+F 3 "" H 10300 2800 50  0001 C CNN
+	1    10300 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+BATT #PWR?
+U 1 1 5CB48118
+P 10000 2600
+F 0 "#PWR?" H 10000 2450 50  0001 C CNN
+F 1 "+BATT" H 10015 2773 50  0000 C CNN
+F 2 "" H 10000 2600 50  0001 C CNN
+F 3 "" H 10000 2600 50  0001 C CNN
+	1    10000 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CB481BB
+P 9850 3000
+F 0 "#PWR?" H 9850 2750 50  0001 C CNN
+F 1 "GND" H 9855 2827 50  0000 C CNN
+F 2 "" H 9850 3000 50  0001 C CNN
+F 3 "" H 9850 3000 50  0001 C CNN
+	1    9850 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10150 2600 10000 2600
+Wire Wire Line
+	10150 2700 10000 2700
+Wire Wire Line
+	10000 2700 10000 2600
+Connection ~ 10000 2600
+Wire Wire Line
+	10150 2850 10000 2850
+Wire Wire Line
+	10000 2850 10000 2700
+Connection ~ 10000 2700
+Wire Wire Line
+	10150 2950 10000 2950
+Wire Wire Line
+	10000 2950 10000 2850
+Connection ~ 10000 2850
+Wire Wire Line
+	10150 2650 9850 2650
+Wire Wire Line
+	9850 2650 9850 2750
+Wire Wire Line
+	10150 2750 9850 2750
+Connection ~ 9850 2750
+Wire Wire Line
+	9850 2750 9850 2900
+Wire Wire Line
+	10150 2900 9850 2900
+Connection ~ 9850 2900
+Wire Wire Line
+	9850 2900 9850 3000
+Wire Wire Line
+	10150 3000 9850 3000
+Connection ~ 9850 3000
+$Comp
+L final_project-rescue:2_pin_screw_terminal U?
+U 1 1 5CBB3A54
+P 2200 1950
+F 0 "U?" H 2328 1996 50  0000 L CNN
+F 1 "2_pin_screw_terminal" H 2328 1905 50  0000 L CNN
+F 2 "" H 2200 1950 50  0001 C CNN
+F 3 "" H 2200 1950 50  0001 C CNN
+	1    2200 1950
+	1    0    0    -1  
+$EndComp
+Text Label 1850 1850 0    50   ~ 0
+VIN
+$Comp
+L power:GND #PWR?
+U 1 1 5CBB3C6A
+P 1900 2200
+F 0 "#PWR?" H 1900 1950 50  0001 C CNN
+F 1 "GND" H 1905 2027 50  0000 C CNN
+F 2 "" H 1900 2200 50  0001 C CNN
+F 3 "" H 1900 2200 50  0001 C CNN
+	1    1900 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 2050 1900 2050
+Wire Wire Line
+	1900 2050 1900 2200
+Wire Wire Line
+	2000 1850 1850 1850
 $EndSCHEMATC

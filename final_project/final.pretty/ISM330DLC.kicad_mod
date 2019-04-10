@@ -1,4 +1,4 @@
-(module ISM330DLC (layer F.Cu) (tedit 5CA8F091)
+(module ISM330DLC (layer F.Cu) (tedit 5CAD5455)
   (descr "LGA-14 Bosch https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BMI160-DS000-07.pdf")
   (tags "lga land grid array")
   (attr smd)
@@ -8,7 +8,6 @@
   (fp_text value ISM330DLC (at 0 2.5) (layer F.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (fp_line (start -1.7 -1.35) (end -0.88 -1.35) (layer F.SilkS) (width 0.1))
   (fp_line (start -1.6 1.35) (end -0.88 1.35) (layer F.SilkS) (width 0.1))
   (fp_line (start -1.6 1.35) (end -1.6 1.13) (layer F.SilkS) (width 0.1))
   (fp_line (start 1.6 1.13) (end 1.6 1.35) (layer F.SilkS) (width 0.1))
