@@ -5,11 +5,11 @@ EELAYER END
 $Descr USLedger 17000 11000
 encoding utf-8
 Sheet 1 1
-Title "Miniproject 3 Version A"
-Date ""
+Title "Final Project"
+Date "Spring 2019"
 Rev ""
 Comp "Olin College of Engineering"
-Comment1 ""
+Comment1 "Anne Kroo, Emma Westerhoff, Kim Winter"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -2052,17 +2052,6 @@ F 3 "" H 15750 7450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 10900 5400
-$Comp
-L final_project-rescue:TXB0108_RGYR U11
-U 1 1 5CB4B187
-P 7500 9000
-F 0 "U11" H 7500 10200 50  0000 C CNN
-F 1 "TXB0108_RGYR" H 7500 10100 50  0000 C CNN
-F 2 "" H 7400 9250 50  0001 C CNN
-F 3 "" H 7400 9250 50  0001 C CNN
-	1    7500 9000
-	1    0    0    -1  
-$EndComp
 Text Label 7050 8400 2    50   ~ 0
 logic1_3
 Text Label 7050 8550 2    50   ~ 0
@@ -2084,7 +2073,7 @@ logic8_5
 Text Label 7950 9300 0    50   ~ 0
 logic7_5
 Text Label 7950 9150 0    50   ~ 0
-logic6_3
+logic6_5
 Text Label 7950 9000 0    50   ~ 0
 logic5_5
 Text Label 7950 8850 0    50   ~ 0
@@ -2280,4 +2269,15 @@ Wire Wire Line
 	1900 2050 1900 2200
 Wire Wire Line
 	2000 1850 1850 1850
+$Comp
+L final_project-rescue:TXB0108_DQS U11
+U 1 1 5CAFC4B6
+P 7500 9000
+F 0 "U11" H 7500 10000 50  0000 C CNN
+F 1 "TXB0108_DQS" H 7500 10100 50  0000 C CNN
+F 2 "final:USON-20_2x4mm_P0.4mm" H 7400 9250 50  0001 C CNN
+F 3 "" H 7400 9250 50  0001 C CNN
+	1    7500 9000
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
