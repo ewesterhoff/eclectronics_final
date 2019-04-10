@@ -1146,7 +1146,7 @@ U 1 1 5CB2D78E
 P 4150 8400
 F 0 "U6" H 4200 9350 50  0000 C CNN
 F 1 "ISM330DLC" H 4200 9250 50  0000 C CNN
-F 2 "" H 4150 7800 50  0001 C CNN
+F 2 "final:ISM330DLC" H 4150 7800 50  0001 C CNN
 F 3 "" H 4150 7800 50  0001 C CNN
 	1    4150 8400
 	1    0    0    -1  
@@ -1157,7 +1157,7 @@ U 1 1 5CA7B34A
 P 13050 6800
 F 0 "U5" H 13050 7615 50  0000 C CNN
 F 1 "RN4871" H 13050 7524 50  0000 C CNN
-F 2 "" H 13050 7650 50  0001 C CNN
+F 2 "final:RN4871" H 13050 7650 50  0001 C CNN
 F 3 "" H 13050 7650 50  0001 C CNN
 	1    13050 6800
 	1    0    0    -1  
@@ -1404,7 +1404,7 @@ U 1 1 5CBB5C0B
 P 1600 6750
 F 0 "J3" H 1706 7128 50  0000 C CNN
 F 1 "Conn_01x06_Male" H 1706 7037 50  0000 C CNN
-F 2 "" H 1600 6750 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 1600 6750 50  0001 C CNN
 F 3 "~" H 1600 6750 50  0001 C CNN
 	1    1600 6750
 	1    0    0    -1  
@@ -2141,12 +2141,12 @@ F 3 "" H 7400 8250 50  0001 C CNN
 $EndComp
 NoConn ~ 10900 7600
 $Comp
-L final_project-rescue:8_pin_screw_terminal U?
+L final_project-rescue:8_pin_screw_terminal U14
 U 1 1 5CAE560A
 P 15850 2950
-F 0 "U?" H 15929 2996 50  0000 L CNN
+F 0 "U14" H 15929 2996 50  0000 L CNN
 F 1 "8_pin_screw_terminal" H 15929 2905 50  0000 L CNN
-F 2 "" H 15850 2950 50  0001 C CNN
+F 2 "final:8_pin_screw" H 15850 2950 50  0001 C CNN
 F 3 "" H 15850 2950 50  0001 C CNN
 	1    15850 2950
 	1    0    0    -1  
@@ -2184,21 +2184,21 @@ Wire Wire Line
 Wire Wire Line
 	15350 3150 15700 3150
 $Comp
-L final_project-rescue:8_pin_screw_terminal U?
+L final_project-rescue:8_pin_screw_terminal U13
 U 1 1 5CB47892
 P 10300 2800
-F 0 "U?" H 10379 2846 50  0000 L CNN
+F 0 "U13" H 10379 2846 50  0000 L CNN
 F 1 "8_pin_screw_terminal" H 10379 2755 50  0000 L CNN
-F 2 "" H 10300 2800 50  0001 C CNN
+F 2 "final:8_pin_screw" H 10300 2800 50  0001 C CNN
 F 3 "" H 10300 2800 50  0001 C CNN
 	1    10300 2800
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+BATT #PWR?
+L power:+BATT #PWR0142
 U 1 1 5CB48118
 P 10000 2600
-F 0 "#PWR?" H 10000 2450 50  0001 C CNN
+F 0 "#PWR0142" H 10000 2450 50  0001 C CNN
 F 1 "+BATT" H 10015 2773 50  0000 C CNN
 F 2 "" H 10000 2600 50  0001 C CNN
 F 3 "" H 10000 2600 50  0001 C CNN
@@ -2206,10 +2206,10 @@ F 3 "" H 10000 2600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0143
 U 1 1 5CB481BB
 P 9850 3000
-F 0 "#PWR?" H 9850 2750 50  0001 C CNN
+F 0 "#PWR0143" H 9850 2750 50  0001 C CNN
 F 1 "GND" H 9855 2827 50  0000 C CNN
 F 2 "" H 9850 3000 50  0001 C CNN
 F 3 "" H 9850 3000 50  0001 C CNN
@@ -2251,12 +2251,12 @@ Wire Wire Line
 	10150 3000 9850 3000
 Connection ~ 9850 3000
 $Comp
-L final_project-rescue:2_pin_screw_terminal U?
+L final_project-rescue:2_pin_screw_terminal U12
 U 1 1 5CBB3A54
 P 2200 1950
-F 0 "U?" H 2328 1996 50  0000 L CNN
+F 0 "U12" H 2328 1996 50  0000 L CNN
 F 1 "2_pin_screw_terminal" H 2328 1905 50  0000 L CNN
-F 2 "" H 2200 1950 50  0001 C CNN
+F 2 "final:2_pin_screw" H 2200 1950 50  0001 C CNN
 F 3 "" H 2200 1950 50  0001 C CNN
 	1    2200 1950
 	1    0    0    -1  
@@ -2264,10 +2264,10 @@ $EndComp
 Text Label 1850 1850 0    50   ~ 0
 VIN
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0144
 U 1 1 5CBB3C6A
 P 1900 2200
-F 0 "#PWR?" H 1900 1950 50  0001 C CNN
+F 0 "#PWR0144" H 1900 1950 50  0001 C CNN
 F 1 "GND" H 1905 2027 50  0000 C CNN
 F 2 "" H 1900 2200 50  0001 C CNN
 F 3 "" H 1900 2200 50  0001 C CNN
