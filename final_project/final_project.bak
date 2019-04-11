@@ -5,11 +5,11 @@ EELAYER END
 $Descr USLedger 17000 11000
 encoding utf-8
 Sheet 1 1
-Title "Miniproject 3 Version A"
-Date ""
+Title "Final Project"
+Date "Spring 2019"
 Rev ""
 Comp "Olin College of Engineering"
-Comment1 ""
+Comment1 "Anne Kroo, Emma Westerhoff, Kim Winter"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -2073,7 +2073,7 @@ logic8_5
 Text Label 7950 9300 0    50   ~ 0
 logic7_5
 Text Label 7950 9150 0    50   ~ 0
-logic6_3
+logic6_5
 Text Label 7950 9000 0    50   ~ 0
 logic5_5
 Text Label 7950 8850 0    50   ~ 0
