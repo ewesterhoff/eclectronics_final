@@ -16,7 +16,8 @@ char receivedChars[numChars];   // an array to store the received data
 boolean newData = false;
 boolean hasStarted=false;
 int dataNumber = 0;            
-int prevDataNumber=0; 
+int prevDataNumber[10]={-100, -100, -100, -100, -100, -100,-100, -100, -100,-100}; //starting values-- will mean buddy will not move until these values are filled 
+int derivative=0;
 
 void setup() {
   pinMode(RST, OUTPUT); 
@@ -46,17 +47,22 @@ void loop() {
       recvWithEndMarker();
       putTogetherNumber();
       
-      if(dataNumber<prevDataNumber){
-        turnRight();
-        Serial.println("turn right.");
+      if(derivative < 0 && prevDataNumber[1] != -100){
+        goBack();
+        Serial.println("go backwards.");
       }
       
-      else{
+      else if(derivative >=0 && prevDataNumber[1]!=-100) {
         goStraight();
         Serial.println("go straight.");
       }
-      
-      prevDataNumber=dataNumber;
+
+
+      //update 10 previous numbers to take average derivative
+      for(int i=0;i<9;i++){
+        prevDataNumber[i]=prevDataNumber[i+1];
+      }
+      prevDataNumber[9]=dataNumber;
       
       delay(3000); //temporarily large
  }
@@ -103,17 +109,29 @@ void putTogetherNumber() { //adapted from: https://forum.arduino.cc/index.php?to
     }
 }
 
-void turnRight(){
+void goBack(){
   digitalWrite(pwm1,200); //needs to be calibrated
-  delay(2000); // needs to be calibrated
-  digitalWrite(pwm1,0);
+  digitalWrite(pwm2,200);
+  digitalWrite(dir,LOW);
 }
 
 void goStraight(){
   digitalWrite(pwm1,200);
   digitalWrite(pwm2,200);
-  delay(2000);
+  digitalWrite(dir,HIGH);
+}
+
+void Stop(){
   digitalWrite(pwm1,0);
   digitalWrite(pwm2,0);
+}
 
+void takeDerivative(){
+  int sum=0;
+  int deriv=0;
+  for (int i=0;i<9;i++){
+      deriv=(prevDataNumber[i+1]-prevDataNumber[i])/2;
+      sum=sum+deriv;
+  }
+  derivative=sum/9;
 }
