@@ -2,12 +2,12 @@
 #include <SoftwareSerial.h>
 
 /* Connect device Rx - 10, Tx - 11 */
-SoftwareSerial mySerial(5,6); //RX, TX -- for actual arduino-5, 6
+SoftwareSerial mySerial(5,6); //RX, TX 
 char incomingByte=0; //int for reading serial data
-int RST = 3; //actually 3
-int RXIND=A0; //actually A0
-int pwm1 = 9;
-int pwm2 = 10;
+int RST = 3; 
+int RXIND=A0; 
+int pwm1 = 9; //left wheels
+int pwm2 = 10; //right wheels
 int dir = A5;
 int notFault = A6;
 
@@ -15,7 +15,8 @@ const byte numChars = 32;
 char receivedChars[numChars];   // an array to store the received data
 boolean newData = false;
 boolean hasStarted=false;
-int dataNumber = 0;             
+int dataNumber = 0;            
+int prevDataNumber=0; 
 
 void setup() {
   pinMode(RST, OUTPUT); 
@@ -38,18 +39,26 @@ void setup() {
   delay(70);
 }
 void loop() {
-    
-    //Serial.println(Serial.available());
-    while (Serial.available()>0){
-        mySerial.println("M");//finds signal strength of last paired device-- found on page 37 of user guide
-        delay(70);
-        Serial.read();
-    }
-    
-    recvWithEndMarker();
-    showNewNumber();
-
-    delay(10);
+  
+      mySerial.println("M");//finds signal strength of last paired device-- found on page 37 of user guide
+      delay(70);
+      
+      recvWithEndMarker();
+      putTogetherNumber();
+      
+      if(dataNumber<prevDataNumber){
+        turnRight();
+        Serial.println("turn right.");
+      }
+      
+      else{
+        goStraight();
+        Serial.println("go straight.");
+      }
+      
+      prevDataNumber=dataNumber;
+      
+      delay(3000); //temporarily large
  }
 
 //adapted from: https://forum.arduino.cc/index.php?topic=396450 
@@ -58,10 +67,12 @@ void recvWithEndMarker() {
     char endMarker = '\n';
     char startMarker= '-';
     char rc;
-
-    if (mySerial.available() > 0) {
+    
+    
+    while (mySerial.available() > 0) {
         rc = mySerial.read();
-        if(rc== startMarker){
+        //Serial.println(rc);
+        if(rc == startMarker){
           hasStarted=true;
         }
         if (rc != endMarker && hasStarted==true) {
@@ -80,9 +91,9 @@ void recvWithEndMarker() {
     }
 }
 
-void showNewNumber() { //adapted from: https://forum.arduino.cc/index.php?topic=396450 
+void putTogetherNumber() { //adapted from: https://forum.arduino.cc/index.php?topic=396450 
     if (newData == true) {
-        dataNumber = 0;             
+        dataNumber = 0;
         dataNumber = strtol(receivedChars,NULL,16);   
         Serial.print("This just in ... ");
         Serial.println(receivedChars);
@@ -90,4 +101,19 @@ void showNewNumber() { //adapted from: https://forum.arduino.cc/index.php?topic=
         Serial.println(dataNumber);     
         newData = false;
     }
+}
+
+void turnRight(){
+  digitalWrite(pwm1,200); //needs to be calibrated
+  delay(2000); // needs to be calibrated
+  digitalWrite(pwm1,0);
+}
+
+void goStraight(){
+  digitalWrite(pwm1,200);
+  digitalWrite(pwm2,200);
+  delay(2000);
+  digitalWrite(pwm1,0);
+  digitalWrite(pwm2,0);
+
 }
