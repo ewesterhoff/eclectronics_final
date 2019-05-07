@@ -58,14 +58,14 @@ void loop() {
       
       if(derivative < 0 && prevDataNumber[0] != -100){ //if the average derivative is positive or negative and the board has gone through the entire cycle of -100's
         changeDirection();
-        Serial.println("change direction");
+        //Serial.println("change direction");
         digitalWrite(LED,HIGH);
         
       }
       
       else if(derivative >=0 && prevDataNumber[0]!=-100) {
         stay();
-        Serial.println("stay");
+        //Serial.println("stay");
         digitalWrite(LED,LOW);
       }
 
@@ -113,7 +113,7 @@ void putTogetherNumber() { //adapted from: https://forum.arduino.cc/index.php?to
     if (newData == true) {
         dataNumber = 0;
         dataNumber = strtol(receivedChars,NULL,16);   //translate to hex int
-        Serial.print("Data as Number ... ");    
+        Serial.print("Decimal RSSI readings ... ");    
         Serial.println(dataNumber);     
         newData = false;
     }
@@ -135,8 +135,6 @@ void stay(){
     int pwmStrength=int(60+(40/12)*abs(derivative)); //scaled from 40-80 pwm range
     digitalWrite(pwm1,pwmStrength);
     digitalWrite(pwm2,pwmStrength);
-    Serial.print("pwm: ");
-    Serial.println(pwmStrength);
 
 }
 
@@ -153,6 +151,4 @@ void takeDerivative(){
       sum=sum+deriv;
   }
   derivative=sum/4;
-  Serial.print("derivative: ");
-  Serial.println(derivative);
 }
