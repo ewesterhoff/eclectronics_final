@@ -18,6 +18,7 @@ boolean hasStarted=false;
 int dataNumber = 0;            
 int prevDataNumber[10]={-100, -100, -100, -100, -100, -100,-100, -100, -100,-100}; //starting values-- will mean buddy will not move until these values are filled 
 int derivative=0;
+bool forward=true;
 
 void setup() {
   pinMode(RST, OUTPUT); 
@@ -34,6 +35,7 @@ void setup() {
   while(!Serial || !mySerial){ //wait to connect
     ;
   }
+  digitalWrite(dir,LOW); //starts going forward
   digitalWrite(RST,HIGH); 
   delay(200);
   mySerial.print("$$$");
@@ -46,15 +48,16 @@ void loop() {
       
       recvWithEndMarker();
       putTogetherNumber();
+      takeDerivative();
       
       if(derivative < 0 && prevDataNumber[1] != -100){
-        goBack();
-        Serial.println("go backwards.");
+        changeDirection();
+        Serial.println("change direction");
       }
       
       else if(derivative >=0 && prevDataNumber[1]!=-100) {
-        goStraight();
-        Serial.println("go straight.");
+        stay();
+        Serial.println("stay");
       }
 
 
@@ -64,7 +67,7 @@ void loop() {
       }
       prevDataNumber[9]=dataNumber;
       
-      delay(3000); //temporarily large
+      delay(1000); //temporarily large
  }
 
 //adapted from: https://forum.arduino.cc/index.php?topic=396450 
@@ -101,24 +104,36 @@ void putTogetherNumber() { //adapted from: https://forum.arduino.cc/index.php?to
     if (newData == true) {
         dataNumber = 0;
         dataNumber = strtol(receivedChars,NULL,16);   
-        Serial.print("This just in ... ");
-        Serial.println(receivedChars);
         Serial.print("Data as Number ... ");    
         Serial.println(dataNumber);     
         newData = false;
     }
 }
 
-void goBack(){
-  digitalWrite(pwm1,200); //needs to be calibrated
-  digitalWrite(pwm2,200);
-  digitalWrite(dir,LOW);
+void changeDirection(){
+  if(forward){
+    forward=false;
+    digitalWrite(dir,HIGH);
+  }
+  else{
+    forward=true;
+    digitalWrite(dir,LOW);
+  }
 }
 
-void goStraight(){
-  digitalWrite(pwm1,200);
-  digitalWrite(pwm2,200);
-  digitalWrite(dir,HIGH);
+void stay(){
+  if(abs(derivative)==12){
+      digitalWrite(pwm1,255);
+      digitalWrite(pwm2,255);
+  }
+  else{
+    int pwmStrength=int(40+(40/12)*abs(derivative));
+    digitalWrite(pwm1,pwmStrength);
+    digitalWrite(pwm2,pwmStrength);
+    Serial.print("pwm: ");
+    Serial.println(pwmStrength);
+  }
+
 }
 
 void Stop(){
@@ -130,8 +145,10 @@ void takeDerivative(){
   int sum=0;
   int deriv=0;
   for (int i=0;i<9;i++){
-      deriv=(prevDataNumber[i+1]-prevDataNumber[i])/2;
+      deriv=(prevDataNumber[9]-prevDataNumber[i]);
       sum=sum+deriv;
   }
   derivative=sum/9;
+  Serial.print("derivative: ");
+  Serial.println(derivative);
 }
