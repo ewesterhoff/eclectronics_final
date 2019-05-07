@@ -16,9 +16,9 @@ void setup() {
 
 // the loop function runs over and over again forever
 void loop() {
-   analogWrite(pwm1, 0);
-   analogWrite(pwm2, 0);
-   //digitalWrite(dir, HIGH);
+   analogWrite(pwm1, 80);
+   analogWrite(pwm2, 80);
+   digitalWrite(dir, LOW);
    int val = analogRead(notFault);
    Serial.println(val);
 }
